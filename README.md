@@ -53,6 +53,8 @@
 
 ## 代码结构
 
+![系统与代码：证据在闭环中流动](doc/assets/poster_system_code.png)
+
 ```text
 active_perception/
 ├── active_perception/
