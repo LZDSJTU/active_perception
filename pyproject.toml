@@ -1,0 +1,13 @@
+[project]
+name = "active-causal-perception"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = ["numpy", "PyYAML", "opencv-python", "Pillow"]
+
+[project.optional-dependencies]
+runtime = ["torch", "transformers", "accelerate", "robosuite", "mujoco"]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: requires a working MuJoCo GPU/GL context"]

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>机器人主动视觉属性感知 · 项目海报</title>
+<style>
+:root{--navy:#09243a;--deep:#103e5a;--blue:#2f7df4;--cyan:#25b7c4;--green:#20bd78;--yellow:#ffc857;--red:#ef5b5b;--paper:#f4f8fb;--ink:#172a38;--muted:#637987;--line:#d8e5ec}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#dce8ee;color:var(--ink);font-family:Inter,"Noto Sans SC","Microsoft YaHei",sans-serif}.poster{width:min(1500px,100%);margin:auto;background:var(--paper);overflow:hidden;box-shadow:0 0 45px #17384b26}.hero{min-height:520px;padding:58px 6% 48px;color:#fff;background:radial-gradient(circle at 82% 10%,#27b7b94a,transparent 29%),linear-gradient(128deg,#071d31 0%,#0f4b6a 62%,#12777c 100%);display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center;position:relative}.eyebrow{font-size:15px;letter-spacing:.2em;color:#8ee8d1;font-weight:900}.hero h1{font-size:clamp(46px,5vw,76px);line-height:1.08;margin:16px 0 22px}.hero h1 em{font-style:normal;color:#7ce5c3}.lead{font-size:21px;line-height:1.8;color:#e3f2f5;max-width:760px}.hero-goal{margin-top:28px;padding:19px 22px;border-left:5px solid var(--yellow);background:#ffffff12;border-radius:0 14px 14px 0;font-size:20px;font-weight:800}.hero-shot{position:relative}.hero-shot img{display:block;width:100%;border-radius:22px;border:1px solid #ffffff4d;box-shadow:0 24px 55px #00111e88}.hero-shot:after{content:"6 BOXES · REAL MUJOCO RUN";position:absolute;right:14px;bottom:14px;background:#071d31dc;color:#a8f2da;border-radius:99px;padding:9px 14px;font-size:12px;font-weight:900;letter-spacing:.08em}.section{padding:48px 5.5%}.section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}.section-title h2{font-size:34px;margin:0;color:var(--navy)}.section-title p{margin:0;color:var(--muted);max-width:680px;line-height:1.7}.card{background:#fff;border:1px solid #dbe7ed;border-radius:20px;box-shadow:0 10px 28px #143e5410}.flow-wrap{padding:28px}.flow{display:grid;grid-template-columns:repeat(7,auto);align-items:center;gap:11px}.node{height:150px;padding:19px 15px;border-radius:16px;background:#edf5ff;border-top:6px solid var(--blue);display:flex;flex-direction:column;justify-content:center}.node .num{font-size:12px;color:var(--blue);font-weight:900;letter-spacing:.12em}.node b{font-size:20px;margin:6px 0}.node small{color:var(--muted);line-height:1.5}.node.press{background:#fff6e9;border-color:#f1a633}.node.grasp{background:#eefaf5;border-color:var(--green)}.node.qwen{background:#f2f0ff;border-color:#8268e8}.arrow{font-size:27px;color:#81a0b1;font-weight:900}.evidence{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}.evidence article{overflow:hidden}.evidence img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.evidence .copy{padding:16px}.evidence h3{margin:0 0 7px;color:var(--navy)}.evidence p{font-size:14px;line-height:1.55;color:var(--muted);margin:0}.arch{display:grid;grid-template-columns:1fr 1fr;gap:22px}.arch-card{padding:28px}.arch-card h3{margin:0 0 18px;color:var(--navy);font-size:23px}.arch-svg{width:100%;height:auto}.code-stack{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.code-item{padding:13px 15px;border-radius:12px;background:#eef4f7;border-left:4px solid var(--cyan)}.code-item b{font-family:ui-monospace,monospace;font-size:14px}.code-item span{display:block;color:var(--muted);font-size:13px;margin-top:4px}.results{background:linear-gradient(180deg,#eaf2f6,#f4f8fb)}.cases{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.case{overflow:hidden;position:relative}.case img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.case .case-copy{padding:16px}.case h3{margin:0 0 6px;font-size:22px}.case p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}.case .ok{position:absolute;top:10px;right:10px;background:#0e9f65;color:#fff;padding:6px 9px;border-radius:99px;font-size:11px;font-weight:900}.metrics{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:18px}.metric{padding:18px 14px;background:var(--navy);color:#fff;border-radius:16px;min-height:120px}.metric strong{display:block;font-size:28px;color:#78e6c1;margin-bottom:7px}.metric span{font-size:13px;color:#d6e6ed;line-height:1.45}.story{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}.story-shots{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px}.story-shots figure{margin:0;position:relative}.story-shots img{width:100%;border-radius:12px;display:block}.story-shots figcaption{position:absolute;left:8px;bottom:8px;background:#09243add;color:white;border-radius:8px;padding:6px 9px;font-size:12px}.story-copy{padding:28px}.story-copy h3{font-size:28px;color:var(--navy);margin:0 0 12px}.story-copy p{line-height:1.75;color:var(--muted)}.route{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.route span{padding:8px 11px;border-radius:99px;background:#e7f0f5;color:#21475d;font-size:13px;font-weight:800}.route span:last-child{background:#d9f7e9;color:#08784b}.conclusion{padding:45px 6%;background:linear-gradient(120deg,#09243a,#124e67);color:#fff;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.conclusion h2{margin:0 0 10px;font-size:34px}.conclusion p{margin:0;line-height:1.75;color:#d8e9ef;max-width:970px}.seal{width:145px;height:145px;border:2px solid #72dfbd;border-radius:50%;display:grid;place-items:center;text-align:center;color:#72dfbd;font-weight:900;font-size:17px;transform:rotate(-7deg)}.footer{padding:20px 5.5%;background:#061826;color:#9fb8c6;display:flex;justify-content:space-between;gap:20px;font-size:13px}@media(max-width:1050px){.hero,.arch,.story{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}.evidence{grid-template-columns:repeat(2,1fr)}.cases{grid-template-columns:repeat(2,1fr)}.metrics{grid-template-columns:repeat(3,1fr)}}@media(max-width:620px){.hero{padding:40px 5%}.evidence,.cases,.metrics,.code-stack{grid-template-columns:1fr}.section-title{align-items:start;flex-direction:column}.conclusion{grid-template-columns:1fr}.seal{display:none}.footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<main class="poster">
+  <header class="hero">
+    <div>
+      <div class="eyebrow">ROBOT ACTIVE PERCEPTION · COURSE PROJECT</div>
+      <h1>让机器人通过交互<br><em>看见隐藏属性</em></h1>
+      <p class="lead">Panda 机械臂依次推动、点击并垂直抓取多个盒子，把不可见的问题转化为可观察证据；最后由本地 Qwen3-VL 判断揭示区域是否出现绿色小球。</p>
+      <div class="hero-goal">目标：从 2–6 个候选盒中找到“可推动、可点击且下方藏有绿色小球”的唯一目标。</div>
+    </div>
+    <div class="hero-shot"><img src="assets/case_6_layout.png" alt="6盒真实MuJoCo场景"></div>
+  </header>
+
+  <section class="section">
+    <div class="section-title"><h2>一次闭环，三种交互，一次视觉判断</h2><p>属性按依赖顺序逐项验证。任何一项不满足，系统立即排除当前候选，把动作留给更有可能的盒子。</p></div>
+    <div class="card flow-wrap">
+      <div class="flow">
+        <div class="node"><span class="num">01 · MOVABLE</span><b>接触并推动</b><small>RGB-D 三维位移确认盒子是否可移动</small></div><div class="arrow">→</div>
+        <div class="node press"><span class="num">02 · CLICKABLE</span><b>垂直点击</b><small>顶部按钮颜色响应确认是否可点击</small></div><div class="arrow">→</div>
+        <div class="node grasp"><span class="num">03 · GRASP</span><b>双指抓取</b><small>真实接触后垂直抬起无底盒并放到旁边</small></div><div class="arrow">→</div>
+        <div class="node qwen"><span class="num">04 · BALL</span><b>Qwen 识别</b><small>只看揭示后的 RGB，输出球、置信度与理由</small></div>
+      </div>
+    </div>
+    <div class="evidence">
+      <article class="card"><img src="assets/action_push.png" alt="推动"><div class="copy"><h3>推动</h3><p>接触后移动，目标实例位移超过 0.018 m 即确认 movable。</p></div></article>
+      <article class="card"><img src="assets/action_press.png" alt="点击"><div class="copy"><h3>点击</h3><p>末端垂直向下，按钮红色变为洋红色即确认 clickable。</p></div></article>
+      <article class="card"><img src="assets/action_lift_empty.png" alt="抓取"><div class="copy"><h3>抓取</h3><p>左右指垫均接触后才抬升，盒体与夹爪全程保持一致。</p></div></article>
+      <article class="card"><img src="assets/case_2_result.png" alt="识别绿色球"><div class="copy"><h3>识别</h3><p>本地 Qwen 独立发现绿色小球，并保留原始 JSON 回答。</p></div></article>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:12px">
+    <div class="section-title"><h2>系统与代码：证据在闭环中流动</h2><p>代码按配置、环境、控制、感知、状态和呈现分层；运行器组织流程，但不把不同职责混在一起。</p></div>
+    <div class="arch">
+      <article class="card arch-card">
+        <h3>系统数据流</h3>
+        <svg class="arch-svg" viewBox="0 0 720 390" role="img" aria-label="系统流程图">
+          <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="#6d91a5"/></marker></defs>
+          <rect x="18" y="35" width="145" height="70" rx="14" fill="#e8f2ff" stroke="#2f7df4"/><text x="90" y="64" text-anchor="middle" font-weight="800" fill="#102a43">任务配置</text><text x="90" y="86" text-anchor="middle" font-size="13" fill="#637987">对象·位置·属性</text>
+          <rect x="212" y="35" width="145" height="70" rx="14" fill="#eefaf5" stroke="#20bd78"/><text x="284" y="64" text-anchor="middle" font-weight="800" fill="#102a43">MuJoCo 场景</text><text x="284" y="86" text-anchor="middle" font-size="13" fill="#637987">Panda 与物体</text>
+          <rect x="406" y="35" width="145" height="70" rx="14" fill="#fff6e9" stroke="#f1a633"/><text x="478" y="64" text-anchor="middle" font-weight="800" fill="#102a43">动作执行</text><text x="478" y="86" text-anchor="middle" font-size="13" fill="#637987">推·点·抓·放</text>
+          <rect x="550" y="160" width="150" height="70" rx="14" fill="#f2f0ff" stroke="#8268e8"/><text x="625" y="189" text-anchor="middle" font-weight="800" fill="#102a43">Qwen3-VL</text><text x="625" y="211" text-anchor="middle" font-size="13" fill="#637987">绿色球判断</text>
+          <rect x="310" y="160" width="160" height="70" rx="14" fill="#e8f8fb" stroke="#25b7c4"/><text x="390" y="189" text-anchor="middle" font-weight="800" fill="#102a43">RGB-D 感知</text><text x="390" y="211" text-anchor="middle" font-size="13" fill="#637987">位移·颜色·分割</text>
+          <rect x="116" y="160" width="145" height="70" rx="14" fill="#eef4f7" stroke="#6d91a5"/><text x="188" y="189" text-anchor="middle" font-weight="800" fill="#102a43">知识状态</text><text x="188" y="211" text-anchor="middle" font-size="13" fill="#637987">未知 / 真 / 假</text>
+          <rect x="116" y="295" width="435" height="65" rx="14" fill="#102a43"/><text x="333" y="324" text-anchor="middle" font-weight="800" fill="white">完整视频 + episode.json + 原始观测</text><text x="333" y="345" text-anchor="middle" font-size="13" fill="#bcd2de">动作、测量、模型回答与结果可追溯</text>
+          <g stroke="#6d91a5" stroke-width="2" marker-end="url(#a)" fill="none"><path d="M163 70H205"/><path d="M357 70H399"/><path d="M478 105V153"/><path d="M450 124L421 153"/><path d="M310 195H268"/><path d="M550 195H477"/><path d="M188 230V287"/><path d="M390 230V287"/><path d="M625 230Q625 327 558 327"/><path d="M116 194Q55 194 55 100Q55 70 90 70"/></g>
+        </svg>
+      </article>
+      <article class="card arch-card">
+        <h3>核心代码模块</h3>
+        <div class="code-stack">
+          <div class="code-item"><b>config.py</b><span>配置解析与运动包络检查</span></div>
+          <div class="code-item"><b>environment.py</b><span>机器人、盒子、按钮和小球</span></div>
+          <div class="code-item"><b>policy.py</b><span>属性依赖与合法动作</span></div>
+          <div class="code-item"><b>runner.py</b><span>交互闭环与证据记录</span></div>
+          <div class="code-item"><b>perception.py</b><span>RGB-D、分割、位移与颜色</span></div>
+          <div class="code-item"><b>qwen.py</b><span>本地视觉推理与 JSON 解析</span></div>
+          <div class="code-item"><b>state.py</b><span>每个盒子的三属性知识</span></div>
+          <div class="code-item"><b>visualization.py</b><span>标签、阶段、状态与视频</span></div>
+        </div>
+        <svg class="arch-svg" viewBox="0 0 720 135" style="margin-top:18px" role="img" aria-label="代码调用流程">
+          <defs><marker id="b" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="#2f7df4"/></marker></defs>
+          <g font-size="13" font-weight="800" fill="#173a4d"><rect x="10" y="35" width="120" height="50" rx="10" fill="#e8f2ff"/><text x="70" y="65" text-anchor="middle">run_experiment</text><rect x="160" y="35" width="120" height="50" rx="10" fill="#e8f8fb"/><text x="220" y="65" text-anchor="middle">runner.run</text><rect x="310" y="35" width="115" height="50" rx="10" fill="#fff6e9"/><text x="367" y="65" text-anchor="middle">动作函数</text><rect x="455" y="35" width="115" height="50" rx="10" fill="#eefaf5"/><text x="512" y="65" text-anchor="middle">证据函数</text><rect x="600" y="35" width="110" height="50" rx="10" fill="#f2f0ff"/><text x="655" y="65" text-anchor="middle">状态更新</text></g><g stroke="#2f7df4" stroke-width="2" marker-end="url(#b)"><path d="M130 60H153"/><path d="M280 60H303"/><path d="M425 60H448"/><path d="M570 60H593"/></g><path d="M655 85Q655 120 220 120Q180 120 180 92" fill="none" stroke="#20bd78" stroke-width="2" marker-end="url(#b)"/><text x="435" y="115" text-anchor="middle" font-size="12" fill="#15815a">下一轮观察—决策—交互</text>
+        </svg>
+      </article>
+    </div>
+  </section>
+
+  <section class="section results">
+    <div class="section-title"><h2>从 2 盒到 6 盒：五种真实场景全部成功</h2><p>数量、布局、属性组合与目标位置不断变化。所有图片均来自最终真实运行，所有绿色球结论均由本地 Qwen 给出。</p></div>
+    <div class="cases">
+      <article class="card case"><span class="ok">SUCCESS</span><img src="assets/case_2_result.png" alt="2盒结果"><div class="case-copy"><h3>2 盒</h3><p>完整比较 A、B；最终选择 B<br>893 帧 · 59.5 秒</p></div></article>
+      <article class="card case"><span class="ok">SUCCESS</span><img src="assets/case_3_result.png" alt="3盒结果"><div class="case-copy"><h3>3 盒</h3><p>A、B逐级排除；最终选择 C<br>744 帧 · 49.6 秒</p></div></article>
+      <article class="card case"><span class="ok">SUCCESS</span><img src="assets/case_4_result.png" alt="4盒结果"><div class="case-copy"><h3>4 盒</h3><p>三种淘汰原因；最终选择 D<br>1,174 帧 · 78.3 秒</p></div></article>
+      <article class="card case"><span class="ok">SUCCESS</span><img src="assets/case_5_result.png" alt="5盒结果"><div class="case-copy"><h3>5 盒</h3><p>不规则两排布局；最终选择 C<br>692 帧 · 46.1 秒</p></div></article>
+      <article class="card case"><span class="ok">SUCCESS</span><img src="assets/case_6_result.png" alt="6盒结果"><div class="case-copy"><h3>6 盒</h3><p>两次抓取判断；最终选择 D<br>1,185 帧 · 79.0 秒</p></div></article>
+    </div>
+    <div class="metrics">
+      <div class="metric"><strong>5 / 5</strong><span>最终案例任务成功</span></div>
+      <div class="metric"><strong>4,688</strong><span>视频帧全部可解码</span></div>
+      <div class="metric"><strong>0.9916</strong><span>最低夹爪垂直对齐度</span></div>
+      <div class="metric"><strong>0 m</strong><span>最大抓取前与放置后漂移</span></div>
+      <div class="metric"><strong>Qwen only</strong><span>绿色球判断无固定规则参与</span></div>
+      <div class="metric"><strong>108 / 108</strong><span>自动化测试通过</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><h2>6盒长路径：看见“没有”，再找到“存在”</h2><p>最丰富的场景不是直接命中目标，而是保留否定证据、继续搜索，直到三个属性全部成立。</p></div>
+    <div class="story">
+      <div class="card story-shots">
+        <figure><img src="assets/case_6_layout.png" alt="6盒初始"><figcaption>① 两排三列初始布局</figcaption></figure>
+        <figure><img src="assets/case_6_intermediate.png" alt="C无球"><figcaption>② 移开 C：Qwen 判断无球</figcaption></figure>
+        <figure style="grid-column:1/-1"><img src="assets/case_6_result.png" alt="D有球"><figcaption>③ 移开 D：发现绿色小球</figcaption></figure>
+      </div>
+      <div class="card story-copy">
+        <h3>目标 D · 10 条动作记录</h3>
+        <p>A 因不可推动被排除；B 可推动但不可点击；C 可推动、可点击，但抓取后 Qwen 判断没有绿色小球；系统继续验证 D，并在盒体被移开后发现绿色小球。</p>
+        <div class="route"><span>push A ✕</span><span>push B ✓</span><span>press B ✕</span><span>push C ✓</span><span>press C ✓</span><span>lift C · no ball</span><span>push D ✓</span><span>press D ✓</span><span>lift D · ball</span><span>STOP D</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="conclusion"><div><h2>从动作到结论，每一步都看得见、查得到</h2><p>系统完成了机械臂主动交互、RGB-D 属性测量、本地多模态模型判断与自动验收的完整闭环。最终成果不仅是正确选择目标，更是一套清晰、连续、可解释并可复查的机器人感知过程。</p></div><div class="seal">REAL RUN<br>5 / 5<br>PASS</div></section>
+  <footer class="footer"><span>MuJoCo · robosuite · Panda · RGB-D · Local Qwen3-VL</span><span>Robot Active Perception · 2026</span></footer>
+</main>
+</body>
+</html>

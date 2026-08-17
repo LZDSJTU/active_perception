@@ -1,0 +1,13 @@
+task: Find a movable, clickable box containing a green ball.
+object_ids: [A, B, C, D, E]
+movable_ids: [B, C, D, E]
+pressable_ids: [C, E]
+target_ids: [C]
+positions: {A: [-0.245, -0.145], B: [-0.142, -0.105], C: [-0.039, -0.145], D: [-0.235, 0.120], E: [-0.132, 0.080]}
+push_vectors: {A: [0.0, -0.03], B: [0.0, -0.03], C: [0.0, -0.03], D: [0.0, 0.03], E: [0.0, 0.03]}
+place_vectors: {A: [0.0, -0.09], B: [0.0, -0.09], C: [0.0, -0.09], D: [0.0, 0.09], E: [0.0, 0.09]}
+seed: 11005
+max_steps: 16
+camera: {name: agentview, width: 640, height: 480, fps: 15}
+thresholds: {motion_m: 0.018}
+required_properties: [movable, pressable, contains_target]

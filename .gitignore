@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+.venv/
+venv/
+env/
+.env
+
+.idea/
+.vscode/
+*.swp
+*~
+
+outputs/
+logs/
+*.log
+
+# Local model weights and caches must not enter Git.
+models/
+checkpoints/
+.cache/
+*.safetensors
+*.bin
+
+# Keep the five curated videos under results/ versioned.
+!results/
+!results/*.mp4

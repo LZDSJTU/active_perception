@@ -1,0 +1,8 @@
+*.mp4 binary
+*.pdf binary
+*.png binary
+*.npy binary
+*.yaml text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.html text eol=lf
